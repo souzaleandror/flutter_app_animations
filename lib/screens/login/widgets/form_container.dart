@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_animations/screens/login/widgets/input_field.dart';
+
+import 'input_field.dart';
 
 class FormContainer extends StatelessWidget {
   @override
@@ -10,15 +11,15 @@ class FormContainer extends StatelessWidget {
         child: Column(
           children: <Widget>[
             InputField(
-              hint: "Email",
+              hint: "Username",
               obscure: false,
               icon: Icons.person_outline,
             ),
             InputField(
-              hint: "Senha",
+              hint: "Password",
               obscure: true,
               icon: Icons.lock_outline,
-            ),
+            )
           ],
         ),
       ),
